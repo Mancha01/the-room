@@ -1,0 +1,32 @@
+@use "../util/" as *;
+
+.buttom{
+display: flex;
+flex-direction: row;
+width: rem(1440);
+height: rem(265);
+
+&__first{
+background-image: url(/images/image-about-dark.jpg);
+width: rem(419);
+}
+
+&__second{
+width: rem(579);
+padding-top: rem(64);
+padding-left: rem(44);
+padding-right: rem(46);
+padding-bottom: rem(68);
+
+p{
+    color: var(--dark-grey);
+    font-size: rem(14);
+}
+}
+
+&__third{
+background-image: url(/images/image-about-light.jpg);
+width: rem(430);
+height: 100%;
+}
+}

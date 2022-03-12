@@ -1,3 +1,5 @@
+@use "../util/" as *;
+
 html{
     font-size: 100%;
     box-sizing: border-box;
@@ -13,4 +15,5 @@ body{
     padding: 0;
     margin: 0;
     font-family: var(--font-spartan);
+    height: rem(800);
 }

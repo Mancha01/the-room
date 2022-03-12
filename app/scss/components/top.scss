@@ -1,0 +1,146 @@
+@use "../util/" as *;
+
+.top{
+    display: flex;
+    flex-direction: row;
+    width: rem(1440);
+    height: rem(531);
+
+    &__container{
+        margin: auto;
+        overflow: hidden;
+        width: rem(837);
+    }
+  
+
+    &__first{
+        display: flex;
+       position: relative;
+        width: rem(837);
+        
+
+        img{
+            width: rem(837);
+            height: rem(531);
+        }
+        
+
+    }
+
+    &__heading{
+        font-weight: 700;
+    }
+
+    &__list{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        
+        li{
+            padding-left: rem(25);
+            color: var(--white);
+            z-index: 1;
+        }
+
+    }
+
+    &__nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: rem(61);
+        margin-top: rem(53);
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        
+
+        li{
+            cursor: pointer;
+        }
+
+        p{
+            color: var(--white);
+            font-weight: 600;
+            font-size: rem(25);
+            z-index: 1;
+        }
+    }
+
+
+    &__second{
+        background: var(--white);
+        padding-top: rem(106);
+        padding-left: rem(93);
+        padding-right: rem(96);
+        padding-bottom: rem(145);
+        position: relative;
+        width: rem(603);
+        
+    }
+
+    &__shop{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        cursor: pointer;
+        
+        p{
+            letter-spacing: rem(8);
+            margin-right: rem(36);
+        }
+    }
+
+    &__slider{
+        display: flex;
+        flex-direction: row;
+        width: rem(160);
+        background-color: var(--black);
+        height: rem(80);
+        float: none;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        
+
+    }
+
+    @mixin slide {
+        display: flex;
+align-items: center;
+justify-content: center;
+height: rem(80);
+width: rem(80);
+background-repeat: no-repeat;
+cursor:pointer;
+
+    }
+
+    &__slider1{
+@include slide();
+&:hover{
+    background-color: var(--very-dark-grey);
+}
+
+    }
+
+    &__slider2{
+        @include slide();
+
+&:hover{
+    background-color: var(--very-dark-grey);
+}
+
+    }
+
+
+
+    &__text{
+        font-weight: 500;
+        color: var(--dark-grey);
+    }
+
+    &__text2{
+        font-weight: 600;
+    }
+}
