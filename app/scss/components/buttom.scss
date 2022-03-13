@@ -3,7 +3,6 @@
 .buttom{
 display: flex;
 flex-direction: row;
-width: rem(1440);
 height: rem(265);
 
 &__first{
@@ -20,7 +19,7 @@ padding-bottom: rem(68);
 
 p{
     color: var(--dark-grey);
-    font-size: rem(14);
+    
 }
 }
 
