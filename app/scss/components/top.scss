@@ -16,13 +16,14 @@
         display: flex;
        position: relative;
         width: rem(837);
-        
+
 
         img{
             width: rem(837);
             height: rem(531);
+            
         }
-        
+    
 
     }
 
@@ -52,6 +53,7 @@
         cursor: pointer;
         position: absolute;
         top: 0;
+        z-index: 1 !important;
         
 
         li{
@@ -62,7 +64,6 @@
             color: var(--white);
             font-weight: 600;
             font-size: rem(25);
-            z-index: 1;
         }
     }
 
